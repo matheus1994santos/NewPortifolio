@@ -79,7 +79,7 @@ const StyledHamburgerButton = styled.div`
     width: 25px;
     height: 3px;
     background-color: #fff;
-    margin: 2px 0;
+    margin: 3px 0;
   }
 
   @media (min-width: 768px) {
