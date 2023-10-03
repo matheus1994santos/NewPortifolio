@@ -9,6 +9,7 @@ const StyledMenu = styled.nav`
 
   li {
     font-size: 18px;
+    cursor: pointer;
   }
 
   @media (max-width: 769px) {
@@ -16,11 +17,13 @@ const StyledMenu = styled.nav`
     position: absolute;
     right: 0;
     top: 100px;
+    min-height: 87vh;
+    height: 100%;
     background-color: #005C53;
     ul {
       flex-direction: column;
       align-items: center;
-      min-height: 87.5vh;
+      height: 100%;
       width: 225px;
       padding: 0 2%;
       padding-top: 8px;
@@ -33,7 +36,6 @@ const StyledMenu = styled.nav`
       width: 100%;
       padding: 8px 0px;
       border-bottom: 0.4px solid #fff;
-      cursor: pointer;
     }
   }
 `;

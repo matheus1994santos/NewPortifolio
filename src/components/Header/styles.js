@@ -45,42 +45,11 @@ const StyledLogoImage = styled.img`
   margin-right: 10px;
 `;
 
-const StyledMenu = styled.nav`
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-
-  li {
-    font-size: 18px;
-  }
-
-  @media (max-width: 767px) {
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')}; // Correção aqui
-
-    ul {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 4px;
-    }
-  }
-`;
-
-const StyledHamburgerButton = styled.div`
+const StyledContent = styled.div`
+  padding: 0 4px;
   display: flex;
-  flex-direction: column;
-  cursor: pointer;
 
-  div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-  }
-
-  @media (min-width: 769px) {
-    display: none;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -88,7 +57,6 @@ export {
     StyledHeaderContainer, 
     StyledLogo, 
     StyledLogoImage, 
-    StyledMenu, 
-    StyledHamburgerButton,
     StyledHeader,
+    StyledContent,
 }

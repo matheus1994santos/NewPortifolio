@@ -3,6 +3,7 @@ import MenuHeader from '../MenuHeader';
 import ThemedButtons from '../ThemedButtons';
 
 import { 
+  StyledContent,
   StyledHeader, 
   StyledHeaderContainer, 
   StyledLogo, 
@@ -27,6 +28,9 @@ const Header = () => {
         //  onClick={({target}) => console.log(target.innerText)}
          />
       </StyledHeader>
+      <StyledContent>
+        
+      </StyledContent>
     </StyledHeaderContainer>
   )
 }
