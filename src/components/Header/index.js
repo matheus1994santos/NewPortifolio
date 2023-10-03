@@ -1,5 +1,14 @@
 import React, {useState} from 'react'
-import { StyledHamburgerButton, StyledHeader, StyledHeaderContainer, StyledLogo, StyledMenu } from './styles'
+import MenuHeader from '../MenuHeader';
+import ThemedButtons from '../ThemedButtons';
+
+import { 
+  StyledHamburgerButton, 
+  StyledHeader, 
+  StyledHeaderContainer, 
+  StyledLogo, 
+  StyledMenu 
+} from './styles'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,14 +29,8 @@ const Header = () => {
           <div></div>
           <div></div>
         </StyledHamburgerButton>
-        <StyledMenu isOpen={menuOpen}>
-          <ul>
-            <li>Início</li>
-            <li>Projetos</li>
-            <li>Sobre</li>
-            <li>Contatos</li>
-          </ul>
-        </StyledMenu>
+        {/* <ThemedButtons variant='hamburger' onClick={toggleMenu}/> */}
+        <MenuHeader Open={menuOpen}/>
       </StyledHeader>
     </StyledHeaderContainer>
   )
