@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyledMenu } from './styles'
 
-const MenuHeader = ({Open}) => {
+const MenuHeader = ({
+  Open, 
+  option = ['Início', 'Projetos', 'Contatos', 'Sobre'],
+  ...otherProps
+}) => {
   return (
     <StyledMenu isOpen={Open}>
         <ul>
-        <li>Início</li>
-        <li>Projetos</li>
-        <li>Sobre</li>
-        <li>Contatos</li>
+          {option.map(options => (
+          <li {...otherProps}>{options}</li>
+          ))}
         </ul>
     </StyledMenu>
   )

@@ -14,19 +14,16 @@ const StyledHeader = styled.header`
   background-color: #005C53;
   color: #fff;
   padding: 20px;
+  position: relative;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  padding: 20px 80px;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
+  @media (max-width: 768px) {
     justify-content: space-between;
     padding: 20px 40px;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 20px 80px;
   }
 `;
 
@@ -35,10 +32,10 @@ const StyledLogo = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 
-  @media (min-width: 768px) {
-    margin-bottom: 0;
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
   }
 `;
 

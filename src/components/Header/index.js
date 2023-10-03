@@ -3,11 +3,9 @@ import MenuHeader from '../MenuHeader';
 import ThemedButtons from '../ThemedButtons';
 
 import { 
-  StyledHamburgerButton, 
   StyledHeader, 
   StyledHeaderContainer, 
   StyledLogo, 
-  StyledMenu 
 } from './styles'
 
 const Header = () => {
@@ -24,13 +22,10 @@ const Header = () => {
           <h3>Matheus Noronha</h3>
           <h6>Web developer</h6>
         </StyledLogo>
-        <StyledHamburgerButton onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </StyledHamburgerButton>
-        {/* <ThemedButtons variant='hamburger' onClick={toggleMenu}/> */}
-        <MenuHeader Open={menuOpen}/>
+        <ThemedButtons active={menuOpen} variant='hamburger' onClick={toggleMenu}/>
+        <MenuHeader Open={menuOpen}
+        //  onClick={({target}) => console.log(target.innerText)}
+         />
       </StyledHeader>
     </StyledHeaderContainer>
   )

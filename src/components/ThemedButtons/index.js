@@ -1,18 +1,14 @@
 import React from 'react'
 import { StyledHamburgerButton } from './styles';
 
-const ThemedButtons = ({variant ,...otherProps}) => {
+const ThemedButtons = ({active , variant ,...otherProps}) => {
 
     return( 
-        <>
-        { variant === 'hamburguer' &&
-            <StyledHamburgerButton {...otherProps}>
-                <div></div>
-                <div></div>
-                <div></div>
-            </StyledHamburgerButton>
-        }
-        </>
+        <StyledHamburgerButton {...otherProps} active={active}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </StyledHamburgerButton>
     ); 
     
 
