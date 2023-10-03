@@ -4,16 +4,10 @@ import styled from "styled-components";
 //     gap: theme.spacing[3],
 // }));
 
-const StyledHeaderContainer = styled.header`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-`;
 
 const StyledHeader = styled.header`
   background-color: #005C53;
   color: #fff;
-  padding: 20px;
   position: relative;
   display: flex;
   align-items: center;
@@ -23,7 +17,7 @@ const StyledHeader = styled.header`
 
   @media (max-width: 768px) {
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 10px 40px;
   }
 `;
 
@@ -48,13 +42,15 @@ const StyledLogoImage = styled.img`
 const StyledContent = styled.div`
   padding: 0 4px;
   display: flex;
+  background-color: ${ ({theme}) => theme.colors.primary}50;
+  height: 100%;
+
 
   @media (max-width: 768px) {
   }
 `;
 
 export { 
-    StyledHeaderContainer, 
     StyledLogo, 
     StyledLogoImage, 
     StyledHeader,

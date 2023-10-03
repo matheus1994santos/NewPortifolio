@@ -1,12 +1,13 @@
 import { ThemeProvider } from "styled-components";
-import Header from "./components/Header";
+
 import getTheme from "./styles/themes/defaultTheme";
+import Home from "./screen/Home";
 
 function App() {
   const theme = getTheme('light');
   return (
     <ThemeProvider theme={theme}>
-      <Header/>
+      <Home/>
     </ThemeProvider>
   );
 }

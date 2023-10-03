@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
+
+import Content from '../Content';
 import MenuHeader from '../MenuHeader';
 import ThemedButtons from '../ThemedButtons';
 
 import { 
-  StyledContent,
   StyledHeader, 
-  StyledHeaderContainer, 
   StyledLogo, 
 } from './styles'
 
@@ -17,7 +17,6 @@ const Header = () => {
   };
 
   return (
-    <StyledHeaderContainer>
       <StyledHeader>
         <StyledLogo>
           <h3>Matheus Noronha</h3>
@@ -28,10 +27,6 @@ const Header = () => {
         //  onClick={({target}) => console.log(target.innerText)}
          />
       </StyledHeader>
-      <StyledContent>
-        
-      </StyledContent>
-    </StyledHeaderContainer>
   )
 }
 

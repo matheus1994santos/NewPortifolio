@@ -16,9 +16,9 @@ const StyledMenu = styled.nav`
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     position: absolute;
     right: 0;
-    top: 100px;
-    min-height: 87vh;
-    height: 100%;
+    top: 81px;
+    min-height: 90vh;
+    height: 830px;
     background-color: #005C53;
     ul {
       flex-direction: column;
