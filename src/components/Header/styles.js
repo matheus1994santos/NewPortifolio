@@ -5,15 +5,16 @@ import styled from "styled-components";
 // }));
 
 
-const StyledHeader = styled.header`
+export const StyledHeader = styled.header`
   background-color: #005C53;
   color: #fff;
-  position: relative;
+  position: ${ (props) => props.fixed ? 'fixed' : 'relative' };
   display: flex;
+  width: 100%;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 10px 40px;
 
   @media (max-width: 768px) {
     justify-content: space-between;
@@ -21,7 +22,7 @@ const StyledHeader = styled.header`
   }
 `;
 
-const StyledLogo = styled.div`
+export const StyledLogo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,13 +34,13 @@ const StyledLogo = styled.div`
   }
 `;
 
-const StyledLogoImage = styled.img`
+export const StyledLogoImage = styled.img`
   width: 40px;
   height: 40px;
   margin-right: 10px;
 `;
 
-const StyledContent = styled.div`
+export const StyledContent = styled.div`
   padding: 0 4px;
   display: flex;
   background-color: ${ ({theme}) => theme.colors.primary}50;
@@ -49,10 +50,3 @@ const StyledContent = styled.div`
   @media (max-width: 768px) {
   }
 `;
-
-export { 
-    StyledLogo, 
-    StyledLogoImage, 
-    StyledHeader,
-    StyledContent,
-}
