@@ -1,14 +1,9 @@
 import styled from "styled-components";
 
-// export const StyledContainer = styled.header(({ theme }) => ({
-//     gap: theme.spacing[3],
-// }));
-
-
 export const StyledHeader = styled.header`
-  background-color: #005C53;
-  color: #fff;
-  position: ${ (props) => props.fixed ? 'fixed' : 'relative' };
+  background-color: ${props => props.fixed ? props.bg : 'inherit'};
+  color: ${ (props) => props.fixed ? '#FFF' : '#000' };
+  position: fixed;
   display: flex;
   width: 100%;
   align-items: center;

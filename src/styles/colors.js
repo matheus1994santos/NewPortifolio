@@ -3,7 +3,7 @@ export const colors = {
         primary: '#005C53',
         secondary: '#DBF227',
         accent: '#D6D58E',
-        background: '#F4F4FB',
+        background: '#FFFFFF',
         defaultTextColor: '#042940',
         secondaryTextColor: '#FFFFFF',
     },

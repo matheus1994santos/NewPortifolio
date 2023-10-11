@@ -1,9 +1,9 @@
 import React from 'react'
 import { StyledContainer } from './styles'
 
-const Container = ({children, ...otherProps}) => {
+const Container = ({children, Url, ...otherProps}) => {
   return (
-    <StyledContainer {...otherProps}>
+    <StyledContainer {...otherProps} url={Url}>
         {children}
     </StyledContainer>
   )
