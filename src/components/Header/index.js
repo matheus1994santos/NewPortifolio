@@ -8,7 +8,7 @@ import {
   StyledLogo, 
 } from './styles'
 
-const Header = ({fixed, children, onClick, ...otherProps}) => {
+const Header = ({fixed, children, onClick, bg, ...otherProps}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,7 +16,7 @@ const Header = ({fixed, children, onClick, ...otherProps}) => {
   };
 
   return (
-      <StyledHeader fixed={fixed} {...otherProps}>
+      <StyledHeader fixed={fixed} bg={bg} {...otherProps}>
         <StyledLogo>
           <h3>Matheus Noronha</h3>
           <h6>Web developer</h6>

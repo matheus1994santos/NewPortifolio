@@ -8,4 +8,5 @@ export const StyledContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+  gap: ${props => props.gap}px;
 `;

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import { useTheme } from 'styled-components'
 
 import Container from '../../components/ContainerPage'
 import Content from '../../components/Content'
 import Header from '../../components/Header'
 
 import WaterImg from '../../assets/img/water.jpg'
-import { useTheme } from 'styled-components'
+import PendulumImg from '../../assets/img/Pendulum.jpg'
 
 const Home = () => {
   const [isMenuFixed, setIsMenuFixed] = useState(false);
@@ -28,13 +29,16 @@ const Home = () => {
   }, []);
   
   return (
-    <Container>
+    <Container gap={30}>
       <Container Url={WaterImg}>
         <Header fixed={isMenuFixed && true} bg={theme.colors.background}/>
         <Content fixed={isMenuFixed && true}>
-            <h1>
-                Olá
-            </h1>
+            
+        </Content>
+      </Container>
+      <Container>
+        <Content Url={PendulumImg} fixed={isMenuFixed && true}>
+            
         </Content>
       </Container>
     </Container>

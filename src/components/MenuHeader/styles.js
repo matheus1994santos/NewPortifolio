@@ -1,18 +1,27 @@
 import styled from "styled-components";
 
 export const StyledMenu = styled.nav`
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+
   & ul {
     list-style: none;
     display: flex;
     gap: 20px;
 
     & li {
-      font-size: 15.5px;
+      font-size: 17px;
+      font-weight: 700;
+      font-family: Arial, sans-serif;
+      letter-spacing: 0.1rem;
       cursor: pointer;
+      height: 20px;
     }
 
     li:hover{
-      border-bottom: 0.4px solid #fff;
+      border-bottom: 0.4px solid ${props => props.fixed ? '#fff' : '#000'};
     }
   }
 
