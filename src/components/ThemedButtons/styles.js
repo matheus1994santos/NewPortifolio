@@ -19,7 +19,7 @@ const StyledHamburgerButton = styled.div`
     margin: 3px 0;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 890px) {
     display: none;
   }
 `;

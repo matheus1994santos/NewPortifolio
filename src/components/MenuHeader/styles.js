@@ -2,38 +2,44 @@ import styled from "styled-components";
 
 export const StyledMenu = styled.nav`
   display: flex;
-  height: 80px;
+  height: 86px;
   justify-content: center;
   align-items: center;
+
 
   & ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 4px;
+    align-items: center;
 
     & li {
-      font-size: 17px;
+      padding: 8px;
+      font-size: 12px;
       font-weight: 700;
       font-family: Arial, sans-serif;
       letter-spacing: 0.1rem;
       cursor: pointer;
-      height: 20px;
+      border-radius: 8px;
+      text-align: center;
     }
 
     li:hover{
-      border-bottom: 0.4px solid ${props => props.fixed ? '#fff' : '#000'};
+      background-color: #fff;
+      color: #000;
+      text-shadow: none;
     }
   }
 
 
-  @media (max-width: 769px) {
+  @media (max-width: 890px) {
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     position: absolute;
     right: 0;
     top: 81px;
     min-height: 90vh;
     height: 830px;
-    background-color: #005C53;
+    background-color:${({ theme }) => theme.colors.background};
     ul {
       flex-direction: column;
       align-items: center;

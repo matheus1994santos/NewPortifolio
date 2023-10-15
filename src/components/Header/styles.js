@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  background-color: ${props => props.fixed ? props.bg : 'inherit'}50;
-  color: ${ (props) => props.fixed ? '#FFF' : '#000' };
-  text-shadow: ${(props) => props.fixed ? '#000 1px 1px 1px':'#fff 1px 1px 1px'};
+  background-color: ${({theme}) => theme.colors.background};
+  color: ${({theme}) => theme.colors.defaultTextColor};
   font-family: 'Barlow Condensed', sans-serif;
   position: fixed;
   display: flex;
@@ -24,11 +23,12 @@ export const StyledLogo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 24px;
+  text-align: center;
+  font-size: 18px;
   margin-bottom: 0;
 
   @media (max-width: 768px) {
-    margin-bottom: 10px;
+
   }
 `;
 
@@ -40,8 +40,11 @@ export const StyledLogoImage = styled.img`
 
 export const StyledContent = styled.div`
   padding: 0 4px;
+  max-width: 900px;
+  width: 100%;
   display: flex;
-  background-color: ${ ({theme}) => theme.colors.primary}50;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
 
 

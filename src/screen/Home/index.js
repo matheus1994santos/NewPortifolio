@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <Container gap={30}>
       <Container Url={WaterImg}>
-        <Header fixed={isMenuFixed && true} bg={theme.colors.background}/>
+        <Header fixed={isMenuFixed && true}/>
         <Content fixed={isMenuFixed && true}>
             
         </Content>

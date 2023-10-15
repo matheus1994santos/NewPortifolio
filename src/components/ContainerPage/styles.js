@@ -7,6 +7,6 @@ export const StyledContainer = styled.div`
   background-image: url(${props => props.url});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   gap: ${props => props.gap}px;
 `;

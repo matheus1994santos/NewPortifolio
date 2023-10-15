@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { BiAtom } from 'react-icons/bi'
 
 import MenuHeader from '../MenuHeader';
 import ThemedButtons from '../ThemedButtons';
@@ -8,7 +9,7 @@ import {
   StyledLogo, 
 } from './styles'
 
-const Header = ({fixed, children, onClick, bg, ...otherProps}) => {
+const Header = ({fixed, children, onClick, ...otherProps}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,7 +17,8 @@ const Header = ({fixed, children, onClick, bg, ...otherProps}) => {
   };
 
   return (
-      <StyledHeader fixed={fixed} bg={bg} {...otherProps}>
+      <StyledHeader fixed={fixed} {...otherProps}>
+        <BiAtom size={50}/>
         <StyledLogo>
           <h3>Matheus Noronha</h3>
           <h6>Web developer</h6>
