@@ -33,7 +33,9 @@ const Home = () => {
     <Container>
       <Container Url={WaterImg}>
         <Header fixed={isMenuFixed && true}/>
-        <Content fixed={isMenuFixed && true}>
+        <Content 
+          fixed={isMenuFixed && true}
+        >
             <Card>
               <h1>Olá</h1>
             </Card>

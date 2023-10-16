@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledContent = styled.div`
   display: flex;
   flex-direction: ${({direction}) => direction ? direction : 'column'};
+  align-items: ${ ({align}) => align };
   justify-content: ${ ({justify}) => justify ? justify : '' };
   padding: 0 4.5%;
   padding-top: ${(props) => props.isfixed ? '70px' : '100px'};

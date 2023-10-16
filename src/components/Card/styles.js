@@ -16,6 +16,6 @@ export const StyledDivCard = styled.div`
     padding-bottom: ${ ({theme,pb}) => pb ? theme.spacing[pb] : '' };
     padding-left: ${ ({theme,pl}) => pl ? theme.spacing[pl] : '' };
     padding-right: ${ ({theme,pr}) => pr ? theme.spacing[pr] : '' };
-    background-color: ${ ({theme, bg}) => theme.colors[bg]}40;
-    color: ${({theme}) => theme.colors.color};
+    background-color: ${ ({theme, bg}) => theme.colors[bg]}30;
+    color: ${({theme,color}) => theme.colors[color]};
 `;
