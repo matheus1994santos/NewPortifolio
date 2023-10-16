@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const StyledMenu = styled.nav`
   display: flex;
+  flex: 1;
   height: 86px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
 

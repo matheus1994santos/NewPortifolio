@@ -7,6 +7,7 @@ import Header from '../../components/Header'
 
 import WaterImg from '../../assets/img/water.jpg'
 import PendulumImg from '../../assets/img/Pendulum.jpg'
+import Card from '../../components/Card'
 
 const Home = () => {
   const [isMenuFixed, setIsMenuFixed] = useState(false);
@@ -29,11 +30,13 @@ const Home = () => {
   }, []);
   
   return (
-    <Container gap={30}>
+    <Container>
       <Container Url={WaterImg}>
         <Header fixed={isMenuFixed && true}/>
         <Content fixed={isMenuFixed && true}>
-            
+            <Card>
+              <h1>Olá</h1>
+            </Card>
         </Content>
       </Container>
       <Container>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
-export const StyledContentHeader = styled.div`
-
+export const StyledFlex = styled.div`
+    display: flex;
+    flex: 1;
 `;

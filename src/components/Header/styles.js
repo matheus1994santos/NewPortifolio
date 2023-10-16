@@ -22,7 +22,21 @@ export const StyledHeader = styled.header`
 export const StyledLogo = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0;
+
+  @media (max-width: 768px) {
+
+  }
+`;
+
+export const StyledLogoIcon = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   text-align: center;
   font-size: 18px;
   margin-bottom: 0;

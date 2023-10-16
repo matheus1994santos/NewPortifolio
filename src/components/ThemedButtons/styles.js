@@ -18,8 +18,14 @@ const StyledHamburgerButton = styled.div`
     background-color: #fff;
     margin: 3px 0;
   }
+`;
 
-  @media (min-width: 890px) {
+export const StyledFlex = styled.div`
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    @media (min-width: 890px) {
     display: none;
   }
 `;

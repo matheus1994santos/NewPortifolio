@@ -6,7 +6,8 @@ import ThemedButtons from '../ThemedButtons';
 
 import { 
   StyledHeader, 
-  StyledLogo, 
+  StyledLogo,
+  StyledLogoIcon, 
 } from './styles'
 
 const Header = ({fixed, children, onClick, ...otherProps}) => {
@@ -18,7 +19,9 @@ const Header = ({fixed, children, onClick, ...otherProps}) => {
 
   return (
       <StyledHeader fixed={fixed} {...otherProps}>
-        <BiAtom size={50}/>
+        <StyledLogoIcon>
+          <BiAtom size={50}/>
+        </StyledLogoIcon>
         <StyledLogo>
           <h3>Matheus Noronha</h3>
           <h6>Web developer</h6>
