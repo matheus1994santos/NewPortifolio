@@ -1,5 +1,7 @@
 import React from 'react'
 import { StyledContent } from './styles'
+import ContentBanner from './ContenBanner';
+import ContentTItle from './ContentTItle';
 
 const Content = ({
   children, 
@@ -23,5 +25,9 @@ const Content = ({
     </StyledContent>
   )
 }
+
+Content.Banner = ContentBanner;
+Content.Title = ContentTItle;
+
 
 export default Content

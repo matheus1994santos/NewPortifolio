@@ -14,7 +14,30 @@ export const StyledContent = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  gap: 10px;
+
+  @media (min-width: 1680px) {
+    height: 934px;
+  }
 
   @media (max-width: 768px) {
   }
+`;
+
+
+export const StyledBanner = styled.div`
+  border: 1px solid red;
+  width: 100%;
+  height: 86%;
+  border-radius: 8px;
+  padding: 16px 8%;
+  background-color: ${({theme}) => theme.colors.secondary}80;
+`;
+
+export const StyledContentTitle = styled.div`
+  border: 1px solid red;
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 8%;
+  background-color: ${({theme}) => theme.colors.secondary}80;
 `;
