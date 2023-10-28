@@ -43,7 +43,12 @@ const Home = () => {
       </Container>
       <Container>
         <Content Url={PendulumImg} fixed={isMenuFixed && true}>
-            
+            <Content.Title>
+              <h1>Titulo</h1>
+            </Content.Title>
+            <Content.Banner>
+              <h1>Tela Banner</h1>
+            </Content.Banner>
         </Content>
       </Container>
     </Container>
