@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
   position: fixed;
   display: flex;
   width: 100%;
-  height: 81px;
+  height: 60px;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;

@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import { BiAtom } from 'react-icons/bi'
 
 import MenuHeader from '../MenuHeader';
@@ -20,7 +20,7 @@ const Header = ({fixed, children, onClick, ...otherProps}) => {
   return (
       <StyledHeader fixed={fixed} {...otherProps}>
         <StyledLogoIcon>
-          <BiAtom size={50}/>
+          <BiAtom size={34}/>
         </StyledLogoIcon>
         <StyledLogo>
           <h3>Matheus Noronha</h3>

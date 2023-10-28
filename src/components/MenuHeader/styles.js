@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledMenu = styled.nav`
   display: flex;
   flex: 1;
-  height: 86px;
+  height: 60px;
   justify-content: flex-end;
   align-items: center;
 
@@ -33,25 +33,26 @@ export const StyledMenu = styled.nav`
   }
 
 
-  @media (max-width: 890px) {
+  @media (max-width: 1100px) {
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     position: absolute;
     right: 0;
-    top: 81px;
+    top: 60px;
     min-height: 90vh;
     height: 830px;
     background-color:${({ theme }) => theme.colors.background};
+    
     ul {
       flex-direction: column;
       align-items: center;
       height: 100%;
-      width: 225px;
+      width: 190px;
       padding: 0 2%;
       padding-top: 8px;
       border-top: 0.4px solid #fff;
 
       li {
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
         width: 100%;
         padding: 8px 0px;
